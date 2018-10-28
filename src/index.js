@@ -8,6 +8,9 @@
 
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import RNSimpleCompass from 'react-native-simple-compass';
+
+const degree_update_rate = 3; // Number of degrees changed before the callback is triggered
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -16,6 +19,11 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+  componentDidMount() {
+    RNSimpleCompass.start(degree_update_rate, degree => {
+      console.log('heading is:', degree);
+    });
+  }
   render() {
     return (
       <View style={styles.container}>
