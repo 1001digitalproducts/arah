@@ -1,0 +1,30 @@
+{
+  "name": "Quba",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.6.0-alpha.8af6728",
+    "react-native": "0.57.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-jest": "23.6.0",
+    "eslint": "^5.8.0",
+    "eslint-config-universe": "^1.0.7",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.2",
+    "prettier": "^1.14.3",
+    "react-test-renderer": "16.6.0-alpha.8af6728"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "eslintConfig": {
+    "extends": "universe/native"
+  }
+}
