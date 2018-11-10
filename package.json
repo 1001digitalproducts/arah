@@ -7,9 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "moment": "^2.22.2",
+    "qs": "^6.5.2",
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.57.4",
-    "react-native-simple-compass": "^1.0.0"
+    "react-native-simple-compass": "^1.0.0",
+    "react-native-vector-icons": "^6.0.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.1.2",
